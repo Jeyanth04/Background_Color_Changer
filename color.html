@@ -1,44 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Background Color Changer</title>
     <style>
-        body{
+        body {
             text-align: center;
         }
-            
-        .button{
-            background-color: white;
-            margin: 150px;
+        h1{
+            text-align: center;
+            font-size: 30px;
         }
-        
+
+        button { 
+            margin: 10px;
+            font-size: 30px;
+        }
     </style>
-    <div class="button">
-        <button onclick="B1()"> RED</button>
-        <button onclick="B2()"> BLUE</button>
-        <button onclick="B3()"> Green</button>
-        <button  onclick="B4()"> Reset</button>
-    
-    </div>
-    
+</head>
+<body>
+    <h1>Click the buttons to change backgroundColor </h1>
+    <button onclick="changeColor('Red')">Red</button>
+    <button onclick="changeColor('green')">Green</button>
+    <button onclick="changeColor('Blue')">Blue</button>
+    <button onclick="resetColor()">Reset</button>
+
     <script>
-        function B1() {
-            document.body.style.backgroundColor = "red";
+        function changeColor(color) {
+            document.body.style.backgroundColor = color;
         }
-        function B2() {
-            document.body.style.backgroundColor = "blue";
-        }
-        function B3() {
-            document.body.style.backgroundColor = "green";
-        }
-        function B4() {
-            document.body.style.backgroundColor = "";
+
+        function resetColor() {
+            document.body.style.backgroundColor = '';
         }
     </script>
-    
+
 </body>
 </html>
