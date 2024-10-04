@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            text-align: center;
+        }
+            
+        .button{
+            background-color: white;
+            margin: 150px;
+        }
+        
+    </style>
+    <div class="button">
+        <button onclick="B1()"> RED</button>
+        <button onclick="B2()"> BLUE</button>
+        <button onclick="B3()"> Green</button>
+        <button  onclick="B4()"> Reset</button>
+    
+    </div>
+    
+    <script>
+        function B1() {
+            document.body.style.backgroundColor = "red";
+        }
+        function B2() {
+            document.body.style.backgroundColor = "blue";
+        }
+        function B3() {
+            document.body.style.backgroundColor = "green";
+        }
+        function B4() {
+            document.body.style.backgroundColor = "";
+        }
+    </script>
+    
+</body>
+</html>
